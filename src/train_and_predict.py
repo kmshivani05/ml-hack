@@ -41,7 +41,7 @@ def main():
     # Create submission file
     submission = pd.DataFrame({
         "ID": test["ID"],
-        "CLASS": predictions
+        "Class": predictions
     })
 
     submission.to_csv("FINAL.csv", index=False)
